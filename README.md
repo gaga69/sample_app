@@ -22,3 +22,8 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+# Ruby on Rails チュートリアル：学習用サンプルアプリケーション
+
+これは、以下のためのサンプルアプリケーションです。
+[*侍エンジニア塾*](http://www.sejuku.net/)
