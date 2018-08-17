@@ -1,5 +1,12 @@
 {
   "name": "sample_app",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/gaga69/sample_app.git",
+  "author": "gaga69 <yumm.yumm.08feb@gmail.com>",
+  "license": "MIT"
 }
