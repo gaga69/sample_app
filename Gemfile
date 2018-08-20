@@ -8,6 +8,9 @@ gem 'rails', '5.2.0'
 gem 'bootstrap-sass'
 gem 'sprockets'
 gem 'devise'
+gem 'faker'
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
