@@ -4,6 +4,8 @@ class Micropost < ApplicationRecord
     validates :content, presence: true, length: { maximum: 140 }
     validates :user_id, presence: true
 
+    mount_uploader :picture, PictureUploader
+
     def self.from_users_followed_by(user)
         followed_user_ids = "SELECT followed_id FROM relationships
                              WHERE follower_id = :user_id"

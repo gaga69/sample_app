@@ -11,6 +11,8 @@ gem 'devise'
 gem 'faker'
 gem 'will_paginate'
 gem 'will_paginate-bootstrap'
+gem 'carrierwave'
+gem 'mini_magick'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server

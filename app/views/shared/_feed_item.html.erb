@@ -4,6 +4,11 @@
     <%= link_to feed_item.user.name, feed_item.user %>
   </span>
   <span class="content"><%= feed_item.content%></span>
+  <span class="micropost-picture">
+    <% if feed_item.picture? %>
+      <%= image_tag feed_item.picture.url(:thumb) %>
+    <% end %>
+  </span>
   <span class="timetamp">
     Posted <%= time_ago_in_words(feed_item.created_at)%> ago.
   </span>
