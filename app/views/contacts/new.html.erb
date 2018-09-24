@@ -1,0 +1,37 @@
+<% provide(:title, 'Contact Form') %>
+<h1>Contact Form</h1>
+<%= form_for(@contact) do |f| %>
+
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+
+      <%= render 'shared/error_messages', object: f.object %>
+
+      <div class="field" >
+        <%= f.label :name, "name" %>
+        <%= f.text_field :name, autofocus: true, class: "form-control" %>
+      </div>
+      <div class="field">
+        <%= f.label :email, "e-mail address" %>
+        <%= f.text_field :email, autofocus: true, class: "form-control" %>
+      </div>
+      <div class="field">
+        <%= f.label :age, "age" %>
+        <%= f.number_field :age, autofocus: true, class: "form-control" %>
+      </div>
+      <div class="field">
+        <%= f.label :content, "content" %>
+        <%= f.text_area :content, autofocus: true, class: "form-control" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3 col-md-offset-3">
+      <div class="actions">
+        <%= f.submit "Post", class: "btn btn-lg btn-primary" %>
+      </div>
+    </div>
+  </div>    
+<% end %>
+
